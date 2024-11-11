@@ -12,6 +12,6 @@ jobs:
         password: ${{secrets.MAIL_PASSWORD}}
         subject: Send Mail
         body: "tuvipost on kiirem, aga commiti tegi" + ${{github.event.pusher.name}} + ${{github.repository}} + " sonumiga " + ${{github.event.head_commit.message}}
-        to:
+        to: pia.lember@gmail.com
         from: Github actions
         
