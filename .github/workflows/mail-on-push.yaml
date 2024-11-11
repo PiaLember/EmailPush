@@ -10,8 +10,8 @@ jobs:
         server_port: 465
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: Send Mail
+        subject: "New Push Notification"
         body: "tuvipost on kiirem, aga commiti tegi" + ${{github.event.pusher.name}} + ${{github.repository}} + " sonumiga " + ${{github.event.head_commit.message}}
         to: pia.lember@gmail.com
-        from: Github actions
+        from: "Github Actions <${{ secrets.MAIL_USERNAME }}>"
         
