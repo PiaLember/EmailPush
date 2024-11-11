@@ -10,7 +10,7 @@ jobs:
         server_port: 465
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: "New Push Notification"
+        subject: "New Push Notification and one more"
         body: "A push was made by ${{ github.event.pusher.name }} to the repository ${{ github.repository }} with the commit message: '${{ github.event.head_commit.message }}'"
         to: pia.lember@gmail.com
         from: "Github Actions <${{ secrets.MAIL_USERNAME }}>"
